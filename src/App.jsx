@@ -20,7 +20,8 @@ export const App = () => {
     <section title={"Task-1 'Social network profile'"}  
       style={{
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: 40,
       }}>
     <Profile
           username={user.username}
