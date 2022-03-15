@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultPhoto from './defaultPhono.png';
+import defaultPhoto from './defaultPhoto.png'
 import css from './socialProfile.module.css';
 
 export default function Profile ({
@@ -10,7 +10,26 @@ export default function Profile ({
     stats: { followers, views, likes }
 }) {
     return (
-        <div></div>
+        <div>
+          <img src={avatar} alt="defaultPhono" />
+          <h2>{userame}</h2>
+          <p>@{tag}</p>
+          <p>{location}</p>
+          <div>
+            <div>
+              <p>Followers</p>
+              <p>{followers}</p>
+            </div>
+            <div>
+              <p>Views</p>
+              <p>{views}</p>
+            </div>
+            <div>
+              <p>Likes</p>
+              <p>{likes}</p>
+            </div>
+          </div>
+        </div>
     )
 }
 
