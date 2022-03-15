@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultPhoto from './defaultPhoto.png'
-import css from './socialProfile.module.css';
+// import css from './socialProfile.module.css';
 
 export default function Profile ({
     userame = "User Name",
