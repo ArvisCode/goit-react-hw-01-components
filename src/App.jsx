@@ -12,11 +12,16 @@ export const App = () => {
         fontSize: 40,
         textTransform: 'uppercase',
         color: '#010101',
+        padding: 20,
       }}
     >
       goit-react-hw-01-components{' '}
     </section>
-    <section title={"Task-1 'Social network profile'"}>
+    <section title={"Task-1 'Social network profile'"}  
+      style={{
+        display: 'flex',
+        justifyContent: 'center'
+      }}>
     <Profile
           username={user.username}
           tag={user.tag}
