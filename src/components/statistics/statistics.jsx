@@ -7,7 +7,7 @@ function randomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-export default function Statistics(statData) {
+export default function Statistics() {
   return (
     <section className={css.statistics}>
       <h2 className={css.title}>Upload stats</h2>
@@ -20,8 +20,8 @@ export default function Statistics(statData) {
               key={id}
               style={{ backgroundColor: randomHexColor() }}
             >
-              <span className={css.label1}>{label}</span>
-              <span className={css.percentage1}>{percentage} %</span>
+              <span className={css.label}>{label}</span>
+              <span className={css.percentage}>{percentage} %</span>
             </li>
           );
          

@@ -4,6 +4,9 @@ import user from './data/user.json';
 import Statistics from 'components/statistics/statistics';
 import stats from './data/statData.json';
 
+import FriendList from 'components/friendList/friendList';
+import friends from './data/friends.json'
+
 export const App = () => {
   return (
     <div>
@@ -14,7 +17,7 @@ export const App = () => {
           fontSize: 40,
           textTransform: 'uppercase',
           color: '#010101',
-          padding: 20,
+          padding: 40,
         }}
       >
         goit-react-hw-01-components{' '}
@@ -38,8 +41,7 @@ export const App = () => {
       </section>
 
       <section
-              title={"Task-2 'Upload stats'"}
-
+        title={"Task-2 'Upload stats'"}
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -49,6 +51,17 @@ export const App = () => {
       >
         <Statistics title="Upload stats" stats={stats} />
         <Statistics stats={stats} />
+      </section>
+
+      <section
+        title={"Task-3 'FriendList'"}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: 40,
+        }}
+      >
+        <FriendList friends={friends} />
       </section>
     </div>
   );
