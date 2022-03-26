@@ -1,8 +1,13 @@
+.friendList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+
 .item {
   display: flex;
   align-items: center;
 
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
 }
 
 .item:last-child {
@@ -38,6 +43,7 @@
 }
 
 .name {
+  width: 90px;
   font-size: 24px;
   font-weight: 500;
 }

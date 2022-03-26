@@ -1,3 +1,5 @@
+import Section from 'components/section/section';
+
 import Profile from 'components/socialProfile/socialProfile';
 import user from './data/user.json';
 
@@ -13,27 +15,9 @@ import transactions from './data/transactions.json';
 export const App = () => {
   return (
     <div>
-      <section
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          fontSize: 40,
-          textTransform: 'uppercase',
-          color: '#010101',
-          padding: 40,
-        }}
-      >
-        goit-react-hw-01-components{' '}
-      </section>
+      <h1>goit-react-hw-01-components</h1>
 
-      <section
-        title={"Task-1 'Social profile'"}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          padding: 40,
-        }}
-      >
+      <Section title={"Task-1 'Social profile'"}>
         <Profile
           username={user.username}
           tag={user.tag}
@@ -41,42 +25,20 @@ export const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
-      </section>
+      </Section>
 
-      <section
-        title={"Task-2 'Upload stats'"}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          padding: 40,
-        }}
-      >
+      <Section title={"Task-2 'Upload stats'"}>
         <Statistics title="Upload stats" stats={stats} />
         <Statistics stats={stats} />
-      </section>
+      </Section>
 
-      <section
-        title={"Task-3 'FriendList'"}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          padding: 40,
-        }}
-      >
+      <Section title={"Task-3 'FriendList'"}>
         <FriendList friends={friends} />
-      </section>
+      </Section>
 
-      <section
-        title={"Task-4 'Transaction History'"}
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          padding: 40,
-        }}
-      >
+      <Section title={"Task-4 'Transaction History'"}>
         <TransactionHistory transactions={transactions} />
-      </section>
+      </Section>
     </div>
   );
 };

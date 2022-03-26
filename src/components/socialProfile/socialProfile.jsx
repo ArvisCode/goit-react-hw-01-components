@@ -1,26 +1,22 @@
 import PropTypes from 'prop-types';
 import css from './socialProfile.module.css';
 
-export default function Profile ({
-    username = "User Name",
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes }
+export default function Profile({
+  username = 'User Name',
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
 }) {
-    return (
-      <div className={css.profile}>
+  return (
+    <div className={css.profile}>
       <div className={css.description}>
-        <img
-          src={avatar}
-          alt="User avatar"
-          className={css.avatar}
-        />
+        <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
-    
+
       <ul className={css.stats}>
         <li className={css.statsItem}>
           <span className={css.label}>Followers</span>
@@ -36,7 +32,7 @@ export default function Profile ({
         </li>
       </ul>
     </div>
-    )
+  );
 }
 
 Profile.propTypes = {

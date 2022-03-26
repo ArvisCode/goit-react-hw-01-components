@@ -9,7 +9,7 @@ function randomHexColor() {
 
 export default function Statistics() {
   return (
-    <section className={css.statistics}>
+    <div className={css.statistics}>
       <h2 className={css.title}>Upload stats</h2>
 
       <ul className={css.statList}>
@@ -27,7 +27,7 @@ export default function Statistics() {
          
         })}
       </ul>
-    </section>
+    </div>
   );
 }
 
