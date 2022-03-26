@@ -31,8 +31,7 @@ export default function Statistics() {
   );
 }
 
-Statistics.prototype = {
-  title: PropTypes.string,
+Statistics.proptype = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
