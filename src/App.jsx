@@ -5,7 +5,10 @@ import Statistics from 'components/statistics/statistics';
 import stats from './data/statData.json';
 
 import FriendList from 'components/friendList/friendList';
-import friends from './data/friends.json'
+import friends from './data/friends.json';
+
+import TransactionHistory from 'components/transactionHistory/transactionHistory';
+import transactions from './data/transactions.json';
 
 export const App = () => {
   return (
@@ -62,6 +65,17 @@ export const App = () => {
         }}
       >
         <FriendList friends={friends} />
+      </section>
+
+      <section
+        title={"Task-4 'Transaction History'"}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: 40,
+        }}
+      >
+        <TransactionHistory transactions={transactions} />
       </section>
     </div>
   );
