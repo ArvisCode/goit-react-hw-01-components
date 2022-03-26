@@ -22,7 +22,7 @@ export default function FriendList({friends}) {
   );
 }
 
-FriendList.proptype = {
+FriendList.propTypes = {
     title: PropTypes.string,
     friends: PropTypes.arrayOf(
         PropTypes.shape({
