@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
 import css from './statistics.module.css';
-import stats from '../../data/statData.json';
-
 
 function randomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-export default function Statistics() {
+export default function Statistics({ title, stats }) {
   return (
     <div className={css.statistics}>
-      <h2 className={css.title}>Upload stats</h2>
+      {title && (<h2 className={css.title}>Upload stats</h2>)}
 
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => {
